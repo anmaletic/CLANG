@@ -15,19 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Hipotenuza.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ifelse.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Zadatak1.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="test.c">
+    <ClCompile Include="Slova.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

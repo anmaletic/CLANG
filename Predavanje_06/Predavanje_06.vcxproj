@@ -18,11 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="inverzij.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{48ea6d59-9a9a-4c6b-be19-8648bb9976d3}</ProjectGuid>
-    <RootNamespace>CLANG</RootNamespace>
+    <ProjectGuid>{4946d7bd-81e6-43fe-a45e-83e3896fa233}</ProjectGuid>
+    <RootNamespace>Predavanje06</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -126,13 +129,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Hipotenuza.c" />
-    <ClCompile Include="ifelse.c" />
-    <ClCompile Include="Main.c" />
-    <ClCompile Include="test.c" />
-    <ClCompile Include="Zadatak1.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
