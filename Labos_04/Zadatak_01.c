@@ -18,7 +18,7 @@ int* GetNiz(int n) {
 
     while (count < n) {
 
-        broj = rand() % 100 + 1;
+        broj = rand() % 100;
 
         if (count == 0) {
             niz[count] = broj;
