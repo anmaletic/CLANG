@@ -76,10 +76,11 @@ kontakt* GetKontakt(kontakt* adresar, int l, char pozivateljBroj[15]) {
 
         int offset = pbL - 8;
 
-        for (int i = 0; i <= 8; i++)
+        for (int i = 0; i < 8; i++)
         {
             tempBroj[i] = pozivateljBroj[i + offset];
         } 
+        printf("%s\n", tempBroj);
     }
     else {
 
