@@ -36,15 +36,18 @@ Farmer* GenerateDemoData() {
         strcpy(farmeri[0].prezime, "Peric");
         farmeri[0].zivotinje = (DomZivotinja*)malloc(2 * sizeof(DomZivotinja));
 
-        //     Zivotinja 1
-        strcpy(farmeri[0].zivotinje[0].vrsta, "Krava");
-        farmeri[0].zivotinje[0].kolicina = 7;
-        farmeri[0].zivotinje[0].brojVrsta = 2;
+        if (farmeri[0].zivotinje != NULL) {
 
-        //     Zivotinja 2
-        strcpy(farmeri[0].zivotinje[1].vrsta, "Svinja");
-        farmeri[0].zivotinje[1].kolicina = 12;
-        farmeri[0].zivotinje[1].brojVrsta = 2;
+            //     Zivotinja 1
+            strcpy(farmeri[0].zivotinje[0].vrsta, "Krava");
+            farmeri[0].zivotinje[0].kolicina = 7;
+            farmeri[0].zivotinje[0].brojVrsta = 2;
+
+            //     Zivotinja 2
+            strcpy(farmeri[0].zivotinje[1].vrsta, "Svinja");
+            farmeri[0].zivotinje[1].kolicina = 12;
+            farmeri[0].zivotinje[1].brojVrsta = 2;
+        }
 
 
         // Farmer 2
@@ -52,20 +55,23 @@ Farmer* GenerateDemoData() {
         strcpy(farmeri[1].prezime, "Horvat");
         farmeri[1].zivotinje = (DomZivotinja*)malloc(3 * sizeof(DomZivotinja));
 
-        //     Zivotinja 1
-        strcpy(farmeri[1].zivotinje[0].vrsta, "Konj");
-        farmeri[1].zivotinje[0].kolicina = 2;
-        farmeri[1].zivotinje[0].brojVrsta = 3;
+        if (farmeri[1].zivotinje != NULL) {
+        
+            //     Zivotinja 1
+            strcpy(farmeri[1].zivotinje[0].vrsta, "Konj");
+            farmeri[1].zivotinje[0].kolicina = 2;
+            farmeri[1].zivotinje[0].brojVrsta = 3;
 
-        //     Zivotinja 2
-        strcpy(farmeri[1].zivotinje[1].vrsta, "Kokos");
-        farmeri[1].zivotinje[1].kolicina = 18;
-        farmeri[1].zivotinje[1].brojVrsta = 3;
+            //     Zivotinja 2
+            strcpy(farmeri[1].zivotinje[1].vrsta, "Kokos");
+            farmeri[1].zivotinje[1].kolicina = 18;
+            farmeri[1].zivotinje[1].brojVrsta = 3;
 
-        //     Zivotinja 3
-        strcpy(farmeri[1].zivotinje[2].vrsta, "Ovca");
-        farmeri[1].zivotinje[2].kolicina = 42;
-        farmeri[1].zivotinje[2].brojVrsta = 3;
+            //     Zivotinja 3
+            strcpy(farmeri[1].zivotinje[2].vrsta, "Ovca");
+            farmeri[1].zivotinje[2].kolicina = 42;
+            farmeri[1].zivotinje[2].brojVrsta = 3;
+        }
 
 
         // Farmer 3
@@ -73,15 +79,18 @@ Farmer* GenerateDemoData() {
         strcpy(farmeri[2].prezime, "Maric");
         farmeri[2].zivotinje = (DomZivotinja*)malloc(2 * sizeof(DomZivotinja));
 
-        //     Zivotinja 1
-        strcpy(farmeri[2].zivotinje[0].vrsta, "Ovca");
-        farmeri[2].zivotinje[0].kolicina = 5;
-        farmeri[2].zivotinje[0].brojVrsta = 2;
+        if (farmeri[2].zivotinje != NULL) {
+        
+            //     Zivotinja 1
+            strcpy(farmeri[2].zivotinje[0].vrsta, "Ovca");
+            farmeri[2].zivotinje[0].kolicina = 5;
+            farmeri[2].zivotinje[0].brojVrsta = 2;
 
-        //     Zivotinja 2
-        strcpy(farmeri[2].zivotinje[1].vrsta, "Kokos");
-        farmeri[2].zivotinje[1].kolicina = 5;
-        farmeri[2].zivotinje[1].brojVrsta = 2;
+            //     Zivotinja 2
+            strcpy(farmeri[2].zivotinje[1].vrsta, "Kokos");
+            farmeri[2].zivotinje[1].kolicina = 5;
+            farmeri[2].zivotinje[1].brojVrsta = 2;
+        }
     }
 
     return farmeri;

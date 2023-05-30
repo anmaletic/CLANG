@@ -42,6 +42,7 @@ kontakt* GenerateDemoData() {
         strcpy(osoba.prezime, prezimena[rand() % 5]);
         strcpy(osoba.broj, broj[i]);
 
+        // Generate random number
         //int rndBroj = rand() % 6599999 + 2891272;
         //char tempbroj[15] = "";
 
@@ -54,6 +55,7 @@ kontakt* GenerateDemoData() {
 
         //strcpy(broj, predbroj[rand() % 6]);
         //strcat(broj, tempbroj);
+        //strcpy(osoba.broj, broj);
 
         adresar[i] = osoba;
     }
