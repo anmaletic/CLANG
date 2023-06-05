@@ -17,6 +17,9 @@
 #include <time.h>#include <string.h>
 #include <ctype.h>
 
+
+#define DEBUG 0
+
 typedef struct kontakt {
     char ime[40];
     char prezime[40];
@@ -28,7 +31,7 @@ kontakt* GenerateDemoData() {
     char* imena[5] = { "Pero", "Marko", "Tina", "Marija", "Tomislav" };
     char* prezimena[5] = { "Peric", "Horvat", "Drakula", "Irha", "Starman" };
     //char* predbroj[6] = { "+38598", "098", "+38591", "091", "+38595", "095" };
-    char* broj[20] = { "0951800092", "0980580092", "+385988626092", "0915847092", "0988678982", 
+    char* broj[20] = { "0951800092", "0980580092", "+385988626092", "0915847092", "0988678982",
                        "+385957980192", "+385957980192", "+385957980192", "+385957980192", "+385912938982",
                        "0916997092", "+385917605092", "0956724192", "+385951204192", "0989900092",
                        "+385982264192", "0987224192", "+385988032982", "0916299982", "0915831292" };
@@ -70,10 +73,10 @@ kontakt* GenerateDemoData() {
 }
 
 kontakt* GetKontakt(kontakt* adresar, int l, char pozivateljBroj[15]) {
-    
+
     int pbL = strlen(pozivateljBroj);
     char tempBroj[9] = "";
-    
+
     if (pbL > 8) {
 
         int offset = pbL - 8;
@@ -81,7 +84,7 @@ kontakt* GetKontakt(kontakt* adresar, int l, char pozivateljBroj[15]) {
         for (int i = 0; i < 8; i++)
         {
             tempBroj[i] = pozivateljBroj[i + offset];
-        } 
+        }
         printf("%s\n", tempBroj);
     }
     else {
@@ -100,15 +103,16 @@ kontakt* GetKontakt(kontakt* adresar, int l, char pozivateljBroj[15]) {
 }
 
 int main(void) {
-    int debug = 1;
 
     srand(time(NULL));
 
-    kontakt *adresar = GenerateDemoData();
+    kontakt* adresar = GenerateDemoData();
 
 
-    while (debug)
+#if DEBUG
+    while (1)
     {
+#endif    
         char pozivateljBroj[15];
         printf_s("Upisite broj pozivatelja: ");
 
@@ -124,7 +128,9 @@ int main(void) {
             printf("Prezime: %s\n", pozivatelj->prezime);
             printf("Broj: %s\n", pozivatelj->broj);
         }
+#if DEBUG
     }
+#endif   
 
     free(adresar);
     return 0;
