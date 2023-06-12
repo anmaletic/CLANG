@@ -15,7 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Zadatak_03.c">
+    <Text Include="LozinkeIn.txt" />
+    <Text Include="input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Zadatak_04.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
