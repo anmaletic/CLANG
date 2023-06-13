@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{60b64984-6405-4533-b3a5-8007f678c04e}</ProjectGuid>
-    <RootNamespace>Labos06</RootNamespace>
+    <ProjectGuid>{6e39e8ae-7053-4fb8-876d-d081469688ca}</ProjectGuid>
+    <RootNamespace>Predavanje14</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,11 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
-    <Text Include="LozinkeIn.txt" />
+    <ClCompile Include="Zadatak_02.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Zadatak_01.c" />
+    <Text Include="Rezultati.txt" />
+    <Text Include="ulazna.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
